@@ -300,7 +300,12 @@ padding-bottom: 4px;
 .form-field textarea:hover{
   border-color: var(--accent-color);
 }
-.extarea{
+.form-field input:focus-within,
+.form-field textarea:focus-within{
+  border-color: var(--accent-color);
+
+}
+.textarea{
   width: 448px;
   height: 120px;
   resize: none;
@@ -335,6 +340,9 @@ border-radius: 4px;
 border: 0;
 cursor: pointer;
 margin-top: 30px;
+}
+input ,textarea{
+  outline: none;
 }
 /* друга секція */
 .container-cection2 {
@@ -673,6 +681,47 @@ color: #FFFFFF;
 .logo-web {
   color: var(--accent-color);
 }
+.futer-form {
+  margin-left: 93px;
+  margin-top: 12px;
+  color: var(--background-main-color);
+  
+
+}
+
+.futer-form input {
+  padding-left: 12px;
+  color: var(--background-main-color);
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  width: 358px;
+height: 50px;
+background-color: var(--hero-backgound);
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+}
+.p-form{
+  padding-bottom: 20px;
+  font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--background-main-color);
+}
+.button-futer{
+  margin-left: 12px;
+  width: 200px;
+height: 50px;
+background-color: var(--accent-color);
+color: var(--background-main-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border: 0;
+}
+
 /*--- портфоліо--- */
 /* секція кнопок */
 .container-portfolio {
