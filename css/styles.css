@@ -274,7 +274,6 @@ letter-spacing: 0.03em;
 color: var(--primary-text-color)
 }
 .form-field{
-
   display: flex;
   flex-direction: column;
   width: 448px;
@@ -306,10 +305,10 @@ padding-bottom: 4px;
   border-color: var(--accent-color);
 
 }
-.textarea{
+.extarea{
   width: 448px;
- height: 120px;
- resize: none;
+  height: 120px;
+  resize: none;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 padding-left: 16px;
