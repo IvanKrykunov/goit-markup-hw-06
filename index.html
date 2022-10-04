@@ -52,22 +52,26 @@
             <div class="modal">
              <button class="button-off" data-modal-close> <svg width="11" height="11"><use href="./images/symbol-defs.svg#icon-Vector"> </use> </svg>  </button>
              <div>
-            <form >
+
+             <!---Модалка--> 
+            <form class="form-field">
               <p class="form-title">Залишти свої дані, ми вам передзвонемо</p>
-              <div class="form-field">
+              
               <label for="name">Ім'я</label>
-              <input type="text" name="name" id="name" autofocus >
-              <svg class="ssss" width="18" height="18"><use href="./images/symbol-defs.svg#icon-envelope-1"></use></svg>
-            </div>
-            <div class="form-field">
+              <input class="input-class" type="text" name="name" id="name" autofocus  >
+              <svg class="icon-input" width="18" height="18"><use href="./images/symbol-defs.svg#icon-man"></use></svg>
+            
+            
                 <label for="tel">Телефон</label>
-              <input type="tel" name="tel" id="tel">
-            </div>
-            <div class="form-field">
+              <input class="input-class"  type="tel" name="tel" id="tel">
+              <svg class="icon-input" width="18" height="18"><use href="./images/symbol-defs.svg#icon-fone"></use></svg>
+            
+            
               <label for="email">Пошта</label>
-              <input type="email" name="mail" id="email">
-            </div>
-            <div class="form-field">
+              <input class="input-class" type="email" name="mail" id="email">
+              <svg class="icon-input" width="18" height="18"><use href="./images/symbol-defs.svg#icon-envelope-1"></use></svg>
+            
+           
                <label for="coment">Коментар</label >
               <textarea name="coment" id="coment" placeholder="Введіть текст" rows="10" class="extarea"></textarea>
             </div>
@@ -373,13 +377,16 @@
               </svg></a></li>
         </ul>
         </div>
-        <div class="futer-form">
+        <form class="futer-form">
+        
           <p class="p-form">Підпишіться на розсилку</p>
-          <form >
+          
             
             <input type="email" name="mail-f" id="email-f" placeholder="E-mail">
-            <button class="button-futer">Підписатися</button>
-        </div>
+            <button class="button-futer">Підписатися <svg class="icon-plane" width="24" height="24"><use href="./images/symbol-defs.svg#icon-plane"></use></svg></button>
+            
+           </form>
+        
       
     </div>
     </footer>
