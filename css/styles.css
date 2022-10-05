@@ -283,12 +283,10 @@ color: var(--primary-text-color)
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
-  
   text-align: initial;
 }
 .form-field input {
   width: 448px;
-  height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 }
@@ -299,18 +297,22 @@ line-height: 14px;
 color: var(--secondary-text-color);
 padding-bottom: 4px;
 }
-.form-field input:hover,
-.form-field textarea:hover{
-  border-color: var(--accent-color);
+
+.form-field:focus-within > .icon-input,
+.form-field:hover > .icon-input {
+  fill: #2196f3;
 }
 .button-off:hover{
   fill: var(--accent-color);
 }
-.form-field input:focus-within,
-.form-field textarea:focus-within{
+.form-field input :focus-within,
+.form-field textarea:focus-within,
+.form-field input:hover,
+.form-field input:hover {
   border-color: var(--accent-color);
 
 }
+
 .extarea{
   width: 448px;
   height: 120px;
@@ -324,7 +326,7 @@ line-height: 14px;
 letter-spacing: 0.01em;
 color: rgba(117, 117, 117, 0.5);
 }
-.checkbox{
+.checkbox-div{
   font-size: 14px;
 line-height: 24px;
 letter-spacing: 0.03em;
@@ -334,6 +336,9 @@ margin-top: 20px;
 
 .checkbox-span{
   color: var(--accent-color);
+}
+.checkbox-input{
+ 
 }
 
 .button-form{
@@ -345,7 +350,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 border: 0;
 cursor: pointer;
-margin-top: 30px;
+
 }
 input ,textarea{
   outline: none;
