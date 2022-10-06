@@ -331,14 +331,15 @@ letter-spacing: 0.01em;
 color: rgba(117, 117, 117, 0.5);
 }
 .checkbox-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 425px;
   font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color:var(--secondary-text-color);
-margin-top: 10px;
-margin-left: auto;
-margin-right: auto;
+
 }
 
 .sheckbox-span{
