@@ -233,6 +233,7 @@ height: 30px;
 background: #FFFFFF;
 border: 1px solid rgba(0, 0, 0, 0.1);
 border-radius: 50%;
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .backdrop{
@@ -266,6 +267,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
 }
+/* Модалка */
 .form-title{
  font-weight: 700;
 font-size: 20px;
@@ -289,6 +291,7 @@ color: var(--primary-text-color)
   width: 448px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
+transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-field > label {
 
@@ -305,7 +308,7 @@ padding-bottom: 4px;
 .button-off:hover{
   fill: var(--accent-color);
 }
-.form-field input :focus-within,
+.form-field input:focus-within,
 .form-field textarea:focus-within,
 .form-field input:hover,
 .form-field textarea:hover
@@ -346,26 +349,33 @@ margin-right: auto;
 .button-form{
   width: 200px;
 height: 50px;
+font-weight: 700;
+font-size: 16px;
+line-height: 30px;
 background-color: var(--accent-color);
 color: var(--background-main-color);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), backgrond 250ms cubic-bezier(0.4, 0, 0.2, 1);
 border-radius: 4px;
 border: 0;
 cursor: pointer;
 margin-top: 20px;
 margin-inline: auto;
-
-
 }
+.button-form:hover{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background: #188CE8;
+}
+
 input ,textarea{
   outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-input{
   position: absolute;
   display: inline-block;
   top: 50%;
   left: 15px;
-  
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 .input-class{
@@ -375,7 +385,6 @@ input ,textarea{
   padding: 12px 15px;
   padding-left: 42px;
   margin-top: 5px;
-  
   border-radius: 4px;
   border: 1px solid #21212133;
   outline: none;
@@ -741,6 +750,12 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
 }
+.futer-form input:hover,
+.futer-form input:focus-visible{
+  border-color: var(--accent-color)
+}
+
+
 .p-form{
   padding-bottom: 20px;
   font-weight: 700;
@@ -768,10 +783,14 @@ color: var(--background-main-color);
   border-radius: 4px;
   background-color: var(--accent-color);
   color: var(--white-color);
-
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+  
+
+.button-futer:hover{
+  background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: background-color var(--time-duration) var(--cubic-bezier);
 }
 .icon-plane{
   margin-left: 10px;
