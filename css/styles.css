@@ -335,6 +335,7 @@ color: rgba(117, 117, 117, 0.5);
   align-items: center;
   justify-content: center;
   width: 425px;
+  margin-top: 10px;
   font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
